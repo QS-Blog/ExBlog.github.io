@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1272720",
+      "name": "更多",
+      "font_class": "more-br",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "2076271",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e892",
+      "unicode_decimal": 59538
+    },
+    {
+      "icon_id": "6665569",
+      "name": "游戏",
+      "font_class": "airudiantubiaohuizhi-zhuanqu_youxi",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    }
+  ]
+}

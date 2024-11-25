@@ -1,0 +1,281 @@
+.header {
+    position: sticky;
+    /* 使用 sticky 使头部悬停 */
+    top: 0;
+    /* 距离顶部0像素 */
+    background-image: url('../../ArtRes/stuLogBack.jpg');
+    /* 添加背景图片 */
+    background-size: cover;
+    /* 使背景图片覆盖整个 .shell */
+    background-position: center;
+    /* 设置背景颜色以遮挡下面内容 */
+    z-index: 1000;
+    /* 确保在其他内容之上 */
+    padding: 10px;
+    /* 适当内边距 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
+    text-align: center;
+    /* 标题居中对齐 */
+}
+
+.main {
+    display: flex;
+    /* 使用flexbox布局 */
+    height: 100vh;
+    /* 高度为100vh，即满屏高度 */
+}
+
+main {
+    display: flex;
+    /* 使用flexbox布局 */
+    height: 100vh;
+    /* 高度为100vh，即满屏高度 */
+}
+
+.left {
+    width: 200px;
+    /* 左侧固定宽度 */
+
+    /* 设置背景色 */
+    background: #000000;
+    /* 也可以保留此行以设置底色 */
+    background-image: url('../../ArtRes/stuPageBKLeft.jpg');
+    /* 添加背景图片 */
+    background-size: cover;
+    /* 使背景图片覆盖整个 .shell */
+    background-position: center;
+    /* 设置文字颜色 */
+    padding: 20px;
+    /* 内边距 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    position: fixed;
+    /* 使左侧固定不动 */
+    height: 100vh;
+    /* 确保左侧高度满屏 */
+}
+
+
+
+.right {
+    margin-left: 250px;
+    /* 给右侧增加左边距，确保不被左侧遮挡 */
+    flex-grow: 1;
+    /* 右侧自适应宽度 */
+    padding: 20px;
+    /* 内边距 */
+    background: #000000;
+    /* 也可以保留此行以设置底色 */
+    background-image: url('../../ArtRes/stuPageBk.jpg');
+    /* 添加背景图片 */
+    background-size: cover;
+    /* 使背景图片覆盖整个 .shell */
+    background-position: center;
+    /* 右侧背景色 */
+    overflow-y: auto;
+    /* 允许纵向滚动 */
+    height: 100vh;
+    /* 确保右侧高度满屏 */
+}
+
+.form {
+    display: flex;
+    /* 使用flex布局 */
+    flex-direction: column;
+    /* 设置为垂直方向排列 */
+    align-items: center;
+    /* 水平居中对齐 */
+    max-width: 400px;
+    /* 设置表单的最大宽度，可以根据需求调整 */
+    width: 100%;
+    /* 使表单宽度占满父容器 */
+    margin: 50px auto;
+    /* 上下间距20px，左右居中 */
+}
+
+textarea {
+    box-sizing: border-box;
+    /* 计算宽度时包括内边距 */
+    max-width: 100%;
+    /* 最大宽度不超过父容器 */
+    width: 100%;
+    /* 宽度占满父容器 */
+    height: 100px;
+    margin: 50px auto;
+    /* 固定高度 */
+}
+
+h1 {
+    font-size: 40px;
+    /* 设置标题字体大小为40px */
+    margin: 0;
+    /* 去除默认的外边距 */
+    text-align: center;
+    /* 标题居中对齐 */
+}
+
+#messageBoard {
+    padding: 20px;
+    /* 内边距 */
+    max-width: 600px;
+    /* 最大宽度 */
+    margin: 20px auto;
+    /* 上下间距20px，左右居中 */
+}
+
+.message {
+    background-color: #ffffff;
+    /* 背景颜色 */
+    border-radius: 10px;
+    /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    padding: 15px;
+    /* 内边距 */
+    margin-bottom: 15px;
+    /* 每个消息之间的下边距 */
+}
+
+.message-info {
+    display: flex;
+    /* 使用flex布局 */
+
+    /* 垂直居中对齐 */
+    justify-content: space-between;
+    /* 在横向上分散对齐 */
+    margin-bottom: 10px;
+    /* 信息部分与内容部分的间距 */
+}
+
+.info {
+    display: flex;
+    /* 使用flex布局 */
+    align-items: left;
+    /* 垂直居中对齐 */
+}
+
+.info img {
+    border-radius: 50%;
+    /* 头像圆形 */
+    margin-right: 10px;
+    /* 头像与文本的右间距 */
+}
+
+.content {
+    /* 现有样式 */
+    white-space: pre-wrap;
+    line-height: 1.5;
+    color: #0c0202;
+    font-size: 5vw;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+
+
+/* From www.lingdaima.com */
+#card {
+    width: 80%;
+    /* 使用相对宽度 */
+    max-width: 800px;
+    /* 设置最大宽度 */
+    height: auto;
+    /* 高度自适应内容 */
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    /* 内间距 */
+    border: 0;
+    background: rgba(5, 5, 22, 0.651);
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+    border-radius: 15px;
+    overflow: hidden;
+    /* 防止内容溢出 */
+}
+
+
+#card::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(#488cfb,
+            #29dbbc,
+            #ddf505,
+            #ff9f0e,
+            #e440bb,
+            #655adc,
+            #488cfb);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+}
+
+#card:hover::after {
+    animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
+#card,
+#card::after {
+    box-sizing: border-box;
+}
+
+#card:active {
+    --border-width: 5px;
+}
+
+.header a {
+    margin-right: -1400px;
+    margin-top: -400px;
+    display: inline-block;
+    /* 使链接成为块级元素，方便添加边距和填充 */
+    padding: 10px 15px;
+    /* 添加内部填充 */
+    background-color: #07162723;
+    /* 设置背景颜色 */
+    color: #fff;
+    /* 设置字体颜色 */
+    text-decoration: none;
+    /* 去掉下划线 */
+    border-radius: 5px;
+    /* 添加圆角 */
+    transition: background-color 0.3s;
+    /* 鼠标悬停时的平滑过渡效果 */
+}
+
+.header a:hover {
+    background-color: #0056b3;
+    /* 鼠标悬停时的背景颜色变化 */
+}
+
+.header a:active {
+    background-color: #004085;
+    /* 点击时的背景颜色变化 */
+}
